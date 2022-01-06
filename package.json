@@ -30,7 +30,9 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
-
+      "yarn lint",
+      "prettier --write",
+      "git add"
     ]
   }
 }
