@@ -3,15 +3,15 @@ module.exports = {
   jsxSingleQuote: true,
   jsxBracketSameLine: true,
   printWidth: 100,
-  singleQuote: true,
-  semi: false,
-  overrides: [
-    {
-      files: "*.json",
-      options: {
-        printWidth: 200,
-      },
-    },
-  ],
-  arrowParens: "always",
+  // singleQuote: true,
+  // semi:never,
+  // overrides: [
+  //   {
+  //     files: "*.json",
+  //     options: {
+  //       printWidth: 200,
+  //     },
+  //   },
+  // ],
+  // arrowParens: "always",
 };
