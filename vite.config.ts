@@ -11,9 +11,23 @@ export default defineConfig({
     },
   },
   css: {
+    // css预处理器
     preprocessorOptions: {
       scss: {
-        additionalData: '@import "@/assets/style/mian.scss";',
+        charset: false,
+        additionalData: '@import "@/assets/style/main.scss";',
+      },
+      less: {
+        charset: false,
+        additionalData: '@import "@/assets/style/main.scss";',
+      },
+    },
+  },
+  build: {
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
       },
     },
   },
